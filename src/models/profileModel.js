@@ -45,7 +45,7 @@ export const profile = {
     },
     {
         name: "ComfyCandy",
-        description: "Volledige webshop gebouwd met React waarin gebruikers verschillende soorten snoep kunnen bekijken en kopen. Klanten kunnen producten toevoegen aan hun winkelwagen, veilig afrekenen, hun profiel beheren en contact opnemen indien nodig. De applicatie bevat ook een admin-gedeelte waarmee producten kunnen worden toegevoegd en beheerd.",
+        description: "Volledige webshop gebouwd met React waarin gebruikers verschillende soorten snoep kunnen bekijken en kopen. Klanten kunnen producten toevoegen aan hun winkelwagen, veilig afrekenen, hun profiel beheren en contact opnemen indien nodig. De applicatie bevat ook een admin-gedeelte waarmee producten kunnen worden toegevoegd en beheerd. Toegang tot de repository wordt enkel verleend op aanvraag gelieve hiervoor contact met mij op te nemen.",
         tech: ["JavaScript", "React", "Stripe", "User authentication", "Admin dashboard"],
         repo: "https://github.com/mathisse2004/comfycandy-frontend.git"
     }
