@@ -3,9 +3,9 @@
 ========================= */
 
 :root{
-  --nav-h: 56px;           /* pas aan als je navbar hoger is */
-  --snap-pad-top: 28px;    /* extra ruimte onder nav */
-  --snap-pad-bot: 56px;    /* onderruimte */
+  --nav-h: 56px;          
+  --snap-pad-top: 28px;    
+  --snap-pad-bot: 56px;   
 }
 
 .page{
@@ -17,7 +17,6 @@
   color: var(--text);
 }
 
-/* Belangrijk: alleen container scrollt (snap blijft strak) */
 .container{
   height: 100vh;
   overflow-y: auto;
@@ -27,27 +26,23 @@
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
 
-  /* zorgt dat scrollTo naar sections netjes rekening houdt met nav */
   scroll-padding-top: calc(var(--nav-h) + var(--snap-pad-top));
 }
 
-/* Elke sectie EXACT fullscreen (geen extra scroll meer nodig) */
 .snapSection{
   scroll-snap-align: start;
   scroll-snap-stop: always;
 
-  height: 100svh;          /* modern, voorkomt mobile issues */
-  height: 100vh;           /* fallback */
+  height: 100svh;        
+  height: 100vh;          
   box-sizing: border-box;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  /* padding zit IN de 100vh door box-sizing */
   padding: calc(var(--nav-h) + var(--snap-pad-top)) 5vw var(--snap-pad-bot);
 
-  /* geen scheidingslijn */
   border-bottom: 0;
 
   position: relative;
@@ -61,7 +56,6 @@
 
 /* =========================
    SCROLLBAR (THEMED)
-   - Wil je hem weg? Zie optie B onderaan.
 ========================= */
 
 /* Firefox */
@@ -788,11 +782,11 @@
   }
 
   .snapInner{
-    width: min(980px, 92vw); /* iets smaller op tablet */
+    width: min(980px, 92vw); 
   }
 
   .heroInner{
-    max-width: 980px; /* niet overdreven breed */
+    max-width: 980px; 
   }
 
   .sectionHead h2{
@@ -825,7 +819,6 @@
     --snap-pad-bot: 22px;
   }
 
-  /* ✅ mobiel: betere hoogte + minder “extra scroll” */
   .container{
     height: 100dvh;
     scroll-snap-type: y proximity;
@@ -836,7 +829,6 @@
     height: 0;
   }
 
-  /* ✅ niet forceren naar exact 100vh op mobile (voelt beter) */
   .snapSection{
     min-height: 100dvh;
     height: auto;
@@ -848,7 +840,7 @@
     width: min(680px, 92vw);
   }
 
-  /* ---------- NAVBAR: 2 rijen (altijd mooi) ---------- */
+  /* ---------- NAVBAR: 2 rijen ---------- */
   .nav{
     flex-direction: column;
     align-items: stretch;
@@ -862,8 +854,8 @@
   }
 
   .navLinks{
-    flex-wrap: nowrap;               /* ✅ 1 lijn */
-    overflow-x: auto;                /* ✅ horizontaal scroll */
+    flex-wrap: nowrap;               
+    overflow-x: auto;               
     -webkit-overflow-scrolling: touch;
     gap: 8px;
     padding-bottom: 2px;
@@ -877,7 +869,6 @@
     font-size: 14px;
   }
 
-  /* ---------- TYPO mobiel ---------- */
   .kicker{ font-size: 13px; }
 
   .heroTitle{
@@ -963,7 +954,7 @@
 /* ---------- SUPER SMALL (<= 420px) ---------- */
 @media (max-width: 420px){
   .skillsGrid{
-    grid-template-columns: 1fr; /* ✅ echt kleine gsm: 1 kolom */
+    grid-template-columns: 1fr; 
   }
 
   .navLink{
