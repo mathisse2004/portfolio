@@ -1,6 +1,6 @@
 # Portfolio – Mathisse Snauwaert
 
-Mijn **persoonlijke portfolio website**, gebouwd met **React** en **Vite**.  
+Mijn **persoonlijke portfolio website** gebouwd met **React** en **Vite**.  
 Hier toon ik wie ik ben, mijn skills en een selectie van projecten.
 
 🔗 **Live:** https://LIVE_URL_HIER
